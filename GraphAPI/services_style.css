@@ -1,0 +1,258 @@
+html, body{
+    margin: 0  ;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+
+body > header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #010e17;
+    padding: 15px;
+    border-bottom: 2px solid #0f78c4;
+}
+
+body > header a, nav>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+    display: inline-block;
+}
+
+body > header a:hover {
+    transform: scale(1.05);
+}
+
+main > section > .container{
+    max-width: 100%;
+    min-width: 100%;
+    height: 92vh;
+    background-color: #12121e;
+    display: flex;
+}
+
+main > section > .container > .graphdiv{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.graph_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+main > section > .container > .graphdiv > .graph_info > .name_graph{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 10px 0px 25px 0px;
+    align-items: center;
+}
+main > section > .container > .graphdiv > .graph_info > .name_graph > span{
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+main > section > .container > .graphdiv > .graph_info > p{
+    font-size: 15px;
+    color: white;
+
+}
+main > section > .container > .graphdiv > .grafico{
+    background-color: #1d1d29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+
+main > section > .container > .graphdiv > .dados_container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+main > section > .container > .graphdiv > .dados_container > .dados_children{
+    background-color: #2d2d41;
+    padding: 10px;
+    width: 15%;
+    margin: 5px 5px;
+}
+main > section > .container > .graphdiv > .dados_container > .dados_children > span{
+    color: white;
+}
+main > section > .container > .graphdiv > .dados_container > .dados_children > p{
+    color: white;
+    font-size: 20px;
+}
+
+
+main > section > .container > .optionsdiv{
+    width: 25%;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-left: 2px solid grey;
+    align-items: center;
+    background-color:#12121e;
+}
+
+main > section > .container > .optionsdiv > span{
+    font-size: 20px;
+    color: white;
+}
+
+main > section > .container > .optionsdiv ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+main > section > .container > .optionsdiv #lista{
+    
+    flex: 1;
+}
+
+
+main > section > .container > .optionsdiv > ul li{
+    background-color: #1d1d29;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2px;
+}
+
+main > section > .container > .optionsdiv > ul li:hover{
+    cursor: pointer;
+    background-color: #2d2d41;
+}
+
+
+main > section > .container > .optionsdiv > ul > li p{
+    padding-left: 15px;
+    font-size: 15px;
+    color: white;
+}
+
+#img_fii1{
+    width: 50px;
+    height: 100%;
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+#img_status{
+    width: 50px;
+    height: 100%;
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#img_name{
+    width: 50px;
+    padding: 5px;
+    background-color: white;
+    height: 50px;
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+footer, footer a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: #0F78C4;
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (max-width:900px){
+
+    main > section > .container{
+        height: auto;
+        flex-direction: column;
+    }
+
+    main > section > .container > .graphdiv{
+        max-width: 95%;
+        min-width: 95%;
+        padding: 10px;
+        
+    }
+    main > section > .container > .graphdiv > .graph_info > .name_graph > span{
+        font-size: 16px;
+        
+    }
+
+    main > section > .container > .graphdiv > .dados_container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    main > section > .container > .graphdiv > .dados_container > .dados_children{
+        background-color: #2d2d41;
+        padding: 10px;
+        width: 30% ;
+        margin: 5px 5px;
+        
+    }
+
+    main > section > .container > .graphdiv > .dados_container > .dados_children > span{
+        color: white;
+        font-size: 15px;
+    }
+    main > section > .container > .graphdiv > .dados_container > .dados_children > p{
+        color: white;
+        font-size: 15px;
+    }
+
+    main > section > .container > .optionsdiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-left: 2px solid grey;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    main > section > .container > .graphdiv > .graph_info > p{
+        font-size: 12px;
+        color: white;
+    
+    }
+    footer{
+        font-size: 16px;
+    }
+    
+}
+
+

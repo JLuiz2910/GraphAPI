@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphAPI - Serviços</title>
+    <link rel="stylesheet" href="/services_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    
+</head>
+<body>
+
+    <header>
+        <a href="">GraphAPI</a>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/services.html">Serviços</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="graphdiv">
+                    <!-- Lado esquerdo (grafico) -->
+                    <div class="graph_info">
+                        <div class="name_graph">
+                            <div id="img_name"></div>
+                            <span id="fii_name">Selecione um fundo</span>
+                            
+                        </div>
+                        <p id="data_request"></p>
+                    </div>
+                    
+                    
+                    <div class="grafico">
+                        <canvas id="myChart" width="380px" height="150"></canvas>
+                    </div>
+                    <div class="dados_container">
+                        <div class="dados_children">
+                            <span>Valor atual - BRL</span>
+                            <p id="regularMarketPrice">0.00</p>
+                        </div>
+                        <div class="dados_children">
+                            <span>Valor - abertura</span>
+                            <p id="regularMarketOpen">0.00</p>
+                        </div>
+                        
+                        <div class="dados_children">
+                            <span>Min. dia - R$ BRL</span>
+                            <p id="regularMarketDayLow">0.00</p>
+                        </div>
+                        <div class="dados_children">
+                            <span>Max. dia - R$ BRL</span>
+                            <p id="regularMarketDayHigh">0.00</p>
+                        </div>
+                        <div class="dados_children">
+                            <span>Variação (dia)</span>
+                            <p id="regularMarketChangePercent">0.00%</p>
+                        </div>
+                        <div class="dados_children">
+                            <span>Lucro p/ ação</span>
+                            <p id="priceEarnings">0.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lado direito (fiis) -->
+                <div class="optionsdiv">
+                    <span>Fundos disponiveis</span>
+                    <ul id="lista">
+                        
+                    </ul>
+
+                    <span>Status da conexão</span>
+                    <ul id="status_list">
+                          
+                    </ul>
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>GraphAPI</span>
+        <hr>
+        <p>Contato</p>
+        <p>E-mail: jluiz2910@gmail.com</p>
+        <p>Github:<a href="https://github.com/JLuiz2910" target="_blank">https://github.com/JLuiz2910</a></p>
+    </footer>
+    
+</body>
+
+<script src="/script.js"></script>
+</html>
